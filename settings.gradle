@@ -1,0 +1,1 @@
+include "crm-ear", "crm-war", "crm-api", "crm-core", "crm-ejb", "crm-ejb-client"
