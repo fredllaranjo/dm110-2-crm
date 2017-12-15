@@ -1,0 +1,4 @@
+dependencies {
+	compile project(':crm-api')
+	compile project(':crm-ejb-client')
+}

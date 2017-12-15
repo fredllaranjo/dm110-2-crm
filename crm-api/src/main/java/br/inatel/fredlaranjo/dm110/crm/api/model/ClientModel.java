@@ -2,7 +2,7 @@ package br.inatel.fredlaranjo.dm110.crm.api.model;
 
 import java.io.Serializable;
 
-public class Client implements Serializable {
+public class ClientModel implements Serializable {
 
 	private static final long serialVersionUID = 5430511629618442353L;
 	private Integer id;

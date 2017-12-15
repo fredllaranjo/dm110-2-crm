@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>CRM</title>
+</head>
+<body>
+	<h1>CRM</h1>
+	<h2>Create</h2>
+	<ul>
+	<li><b>URL:</b> /crm/rest/client/</li>
+	<li><b>Método:</b> GET</li>
+	<li><b>Resposta:</b> JSON com a lista dos clientes encontrados</li> 
+	<li>( `[ {"id": "1", "nome": "fred", "email": "fred@email.com"},{"id": "41", "nome": "mecva", "email": "mecva@email.com"} ]` )</li>
+	</ul>
+	<h2>List</h2>
+	<form action="/crm/rest/client/" method="GET">
+		<input type="submit" value="List">
+	</form>
+</body>
+</html>

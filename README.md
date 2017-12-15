@@ -7,15 +7,11 @@
 
 * URL: /crm/rest/client/
 * Método: GET
-* Parâmetros:
-  * `name` (parâmetro de query) (opcional)
-  * `email` (parâmetro de query) (opcional)
-  * `id` (parâmetro de query) (opcional)
-* Resposta: JSON com a lista dos clientes encontrados ( `[ {"id": "1", "name": "fred", "email": "fred@email.com"},{"id": "41", "name": "mecva", "email": "mecva@email.com"} ]` ).
+* Resposta: JSON com a lista dos clientes encontrados ( `[ {"id": "1", "nome": "fred", "email": "fred@email.com"},{"id": "41", "nome": "mecva", "email": "mecva@email.com"} ]` ).
 
 ### Criar cliente:
 
 * URL: /crm/rest/client/
 * Método: POST
-* Body: `{"name": "fred", "email": "fred@email.com"}`
-* Resposta: JSON com o cliente criado ( `{"id": "1", "name": "fred", "email": "fred@email.com"}` ).
+* Body: `{"nome": "fred", "email": "fred@email.com"}`
+* Resposta: JSON com o cliente criado ( `{"id": "1", "nome": "fred", "email": "fred@email.com"}` ).

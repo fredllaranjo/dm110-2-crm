@@ -1,0 +1,24 @@
+apply plugin: 'ear'
+
+dependencies {
+	deploy project(path: ':crm-war', configuration: 'archives')
+	deploy project(path: ':crm-ejb')
+
+	earlib project(':crm-api')
+	earlib project(':crm-core')
+	earlib project(':crm-ejb-client')
+}
+
+ear {
+	deploymentDescriptor {
+		def warName = project(':crm-war').name
+		def warVersion = project(':crm-war').version
+		def warFileName = warName + "-" + warVersion + ".war"
+		webModule(warFileName, 'crm')
+
+		def ejbName = project(':crm-ejb').name
+		def ejbVersion = project(':crm-ejb').version
+		def ejbFileName = ejbName + "-" + ejbVersion + ".jar"
+		module(ejbFileName, 'ejb')
+	}
+}
